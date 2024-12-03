@@ -1,0 +1,546 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+/*ESTILO DE TEXTO GOOGLE FONT*/
+
+/*  font-family: "Dosis", sans-serif;
+     font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;   
+*/  
+
+
+body {
+          display: flex;
+          justify-items: center;
+          align-items: center;
+          min-height: 100vh;
+
+}
+
+/*CONTENEDOR DE TODOS*/
+
+.container {
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+    font-weight: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: azure;
+}
+
+.container>div {
+    flex: 100%;
+}
+
+/*CONTENEDOR DE HEADER Y NAV */
+
+.navbar {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: lightsteelblue;
+    border-radius: 3px;
+}
+
+
+header{
+    display: flex;
+    padding: 0.3rem;
+    height: 6rem;
+    background-image: url(../imagenes/baner.jpg);
+    width: 100%;
+    text-align: center;
+}
+
+      
+.logo{
+    Width: 200px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 1rem;
+}
+
+
+.portada {
+    font-family: "Dosis", sans-serif;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 18px;
+    -webkit-text-stroke: 1px rgb(80, 80, 255);
+        
+}
+
+
+/* MENU NAVEGACION*/
+
+nav {
+    background-color: lightsteelblue;
+    Display: flex;
+    Gap: 2rem;
+    position: sticky;
+    top: 0;
+      
+}
+
+
+.enlace {
+    background-color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    Font-weight: 500;
+    Color: black;
+    Font-size: 20px;
+    font-family: "Dosis", sans-serif;
+    Border: 2px solid transparent;
+    border-radius: 1rem;
+    Padding: 5px;
+    Transition: .4s ease;
+}
+      
+nav li {
+    position: relative;
+    
+}
+
+
+.enlace:hover {
+    color: red;
+    transition: .4s ease;
+    border: 2px solid rgb(6, 160, 255);
+     
+}
+      
+/*CONTENEDOR DEL ASIDE  MAIN ARTICLE FOOTER*/
+
+.subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*ASIDE*/
+
+aside {
+    margin: 10px;
+    flex: 1;
+    background: rgb(75, 185, 75);
+}
+
+/*imagen aside index*/
+
+
+aside>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* enlaces aside*/
+
+aside a {
+    text-decoration: none;
+}
+
+aside h6:hover {
+    color: crimson;
+    transition: 1s ease;
+}
+
+/*clase imagenes en el aside*/
+
+
+aside .ejemplo1, .ejemplo2, .ejemplo3 {
+    width: 28vh;
+    height: 23vh;
+    padding: 1.5vh;
+    border-radius: 1rem ;
+}
+
+/* clase  de P PAGINA REPACIONES*/
+
+
+.rep {
+    color: black;
+    Font-size: 1.4rem;
+    Margin: 5px;
+    text-align: justify;
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+}
+
+/*CONTENEDOR DEL MAIN*/
+
+.main_container {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*MAIN*/
+
+
+.main_container>main {
+    flex: 100%;
+}
+
+main {
+    min-height: 250px;
+    background: rgb(211, 213, 190);
+    border-radius: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+main img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    border-radius: 2rem;
+}
+
+main li {
+    background-color: rgb(190, 190, 214);
+    text-align: left;
+    border-radius: 1rem;
+    
+}
+
+
+p {
+    color: black;
+    Font-size: 1.4rem;
+    Margin: 5px;
+    text-align: justify;
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+    line-height: 28px;
+}
+
+/*CONTENEDOR DE LOS CONTENT*/
+
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.content1, .content2, .content3, .content4 {
+    min-height: 200px;
+    flex: 1;
+}
+
+.content1 img {
+    width: 39vh;
+    height: 31vh;
+    border: 2px solid rgb(7, 49, 49);
+}
+
+.content2 img {
+    width: 39vh;
+    height: 31vh;
+    border: 2px solid rgb(7, 49, 49);
+}
+
+.content3 img {
+    width: 39vh;
+    height: 31vh;
+    border: 2px solid rgb(7, 49, 49);
+}
+ 
+
+.content {
+    border: 2px solid coral;
+    margin-left: 80px;
+    
+}
+
+
+/* FOOTER*/
+
+
+footer {
+    background-color: rgb(7, 68, 68);
+    display: flex;
+    flex: 100%;
+    height: 4.1rem;
+    gap: 10px;
+}
+
+/* ESTILOS DE H E IMAGENES DEL FOOTER*/
+
+H6 {
+    color: #fff;
+
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+}
+
+.sociales {
+
+    width: 40px;
+}
+
+.inst {
+
+    width: 40px;
+}
+
+/* reparaciones*/
+
+.mia {
+    color: #fff;
+    text-decoration: none;
+}
+ 
+
+
+/*pagina galeria*/
+
+
+.carrucel {
+    width: 400px;
+    padding: 20px;
+}
+
+
+.carrucel img {
+   width: 100%;
+   height: 25vh;
+}
+
+.carousel-item {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.carousel-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+
+}
+
+
+h2 {
+    font-size: 35px;
+    color: crimson;  
+    
+}
+.galeria {
+    background-image: url(../imagenes/mainimag.gif);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.video {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+}
+
+/*CONTACTOS*/
+
+.forum {
+    background-color: #efe7e7;
+    width: 400px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px  37px rgba(0, 0, 0, .8);    
+}
+
+.plantilla {
+    width: 100%;
+    background-color: blue;
+    overflow: hidden;
+    color: #fff;
+
+}
+
+.plantilla span {
+    font-family: "Dosis", sans-serif;
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+
+}
+
+.plantilla1 img {
+    width: 70px;
+    height: 60px;
+    border-radius: 1rem;
+
+}
+
+.plantilla1 h3 {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+}
+
+.boton {
+    margin: 150px;
+}
+
+.contac {
+    padding: 8rem;
+    overflow: hidden;
+    color: #000;
+}
+
+.contac label, .contac input, .contac textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contac label {
+    font-weight: 700;
+}
+
+/*LENTA DISCOS PROCESADOR*/
+
+.lenta {
+    display: flex;
+    background-color: rgb(190, 190, 214);
+    align-items: center;
+    gap: 20px;
+
+}
+
+.video-lenta {
+    flex-grow: 1;
+    margin: 20px;
+
+}
+
+.texto-lenta {
+    flex-grow: 10;
+    margin: 20px;
+
+}
+
+.boton1 {
+    margin: 10px;
+    align-self: flex-end;
+}
+
+
+
+/*MEDIAS QUERY*/
+
+@media (max-width: 700px) {
+    .portada { display: none;} 
+  }
+
+@media (max-width:500px) {
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+@media (max-width:1000px) {
+.portada {
+  font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+    nav, .row{
+        flex-direction: column;
+    
+    }
+    
+}
+
+@media (max-width:800px) {
+    aside {
+        display: none;
+    
+    }
+}
+
+@media (min-width:1150px) {
+   .ejemplo3 { display: none;    
+     }
+}
+
+@media (max-width:900px) {
+    .rep {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:850px) {
+    .content {
+        width: 200px;
+        height: 200px;
+        border: none;
+    }
+}
+
+@media (max-width:850px) {
+    .content img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media  (min-width:999px) {
+    .container-fluid .mia{ display: block !important;
+
+    }
+ }
+
+   @media  (max-width:990px) {
+       .container-fluid .mia  { color: #000;
+           text-decoration: none;
+  
+       }
+ } 
+ 
+ @media( max-width:800px) {
+    .carousel-item{
+              object-fit: contain;
+    }
+    
+}
+
+@media( max-width:900px) {
+    .galeria {
+            background-image: none;
+    }
+    
+}
+
+@media (max-width:900px) {
+    .lenta {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
