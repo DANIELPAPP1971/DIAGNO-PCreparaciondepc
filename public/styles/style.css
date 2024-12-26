@@ -1,0 +1,254 @@
+  /* Reset de márgenes y paddings */
+  body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          font-family: Arial, sans-serif;
+      }
+
+      /* Estilos del encabezado */
+      header {
+          width: 100%;
+          height: 200px;
+          background-color: #4CAF50; /* Color de fondo verde */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 5px 5px 5px 15px ;
+          box-sizing: border-box;
+          color: white;
+      }
+
+       /* Cambiar color del enlace al pasar el cursor */
+       header .whatsapp a:hover {
+          color: #d3d025; /* Color verde típico de WhatsApp */
+      }
+
+
+      /* Logo de la izquierda */
+      header .logo img {
+          width: 200px;
+          height: 110px;
+          border-radius: 1rem;
+      }
+
+      /* Texto central */
+      header .centro {
+          font-size: 1.5em;
+          text-align: center;
+          flex-grow: 1;
+      }
+
+      /* Enlace de WhatsApp en la derecha */
+      header .whatsapp {
+          font-size: 1em;
+          margin: 15px;
+      }
+
+      header .whatsapp a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+      }
+
+      /* Estilos de la navegación */
+      nav {
+          width: 100%;
+          background-color: #333;
+      }
+
+      nav ul {
+          display: flex;
+          justify-content: flex-start;
+          padding: 0;
+          margin: 0;
+      }
+
+      nav ul li {
+          list-style-type: none;
+      }
+
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+          padding: 15px 20px;
+          display: block;
+          text-align: center;
+      }
+
+      nav ul li a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+
+      /* Estilos de los contenedores de texto */
+      .contenedores {
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 10px;
+          flex-wrap: wrap; /* Permitir que los contenedores se envuelvan en pantallas pequeñas */
+      }
+
+      .contenedor, .contenedor1, .contenedor2, .contenedor3, .contenedor4 {
+          flex: 1;
+          margin: 10px;
+          padding: 20px;
+          background-color: #f4f4f4;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    
+      .contenedor2 a {
+        text-decoration: none;
+
+      }
+
+      .contenedor2 a:hover {
+        color: #4CAF50;
+      }
+
+      .contenedor1 img {
+        padding: 5px;
+        border-radius: 1rem;
+      }
+
+      .contenedor2 img {
+        padding: 5px;
+        border-radius: 1rem;
+      }
+
+      .mano:hover {
+        transform: scale(1.5); 
+      }
+
+      .contenedor3 img {
+        padding-top: 5px;
+        border-radius: 1rem;
+      }
+
+      .contenedor4 .marcas {
+        width: 250px;
+        height: auto;
+        border-radius: 1rem;
+      }
+
+      .contenedor4 img {
+        margin-top: 5px;
+        border-radius: 1rem;
+      }
+
+       /* Estilos del carrusel */
+       .carrusel-container {
+          width: 100%;
+          overflow: hidden;
+          margin-top: 5px;
+          margin-bottom: 5px;
+      }
+
+      .carrusel {
+          display: flex;
+          transition: transform 1s ease-in-out;
+      }
+
+      .carrusel img {
+          width: 100%;
+          height: 500px;
+          object-fit: cover;
+          border-radius: 1rem;
+      }
+
+      /* Estilos del footer */
+      footer {
+          width: 100%;
+          height: 150px;
+          background-color: #333;
+          color: white;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.2em;
+      }
+
+       /* Estilos responsivos */
+       @media (max-width: 768px) {
+          /* Para pantallas pequeñas, poner los elementos del header en columna */
+          header {
+              flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+              height: auto; /* Ajustar la altura del header */
+              text-align: center; /* Centrar los textos */
+          }
+
+          header .logo, header .centro, header .whatsapp {
+              flex: none; /* No se expanden, se ajustan al contenido */
+              width: 100%; /* Los elementos ocupan el 100% del ancho */
+              padding: 10px 0; /* Espaciado para separar los elementos */
+          }
+
+          /* Reducir tamaño de fuente en pantallas pequeñas */
+          header .logo {
+              font-size: 1.5em;
+          }
+
+          header .centro {
+              font-size: 1.2em;
+          }
+
+          header .whatsapp a {
+              font-size: 0.9em;
+          }
+
+          nav ul {
+              flex-direction: column; /* Cambiar los enlaces a columna */
+              align-items: center; /* Centrar los enlaces */
+          }
+
+          nav ul li a {
+              padding: 10px 15px; /* Ajustar el tamaño del padding */
+          }
+      }
+
+      /* Estilos responsivos */
+      @media (max-width: 768px) {
+          /* Para pantallas pequeñas, poner los enlaces en columna */
+          nav ul {
+              flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+              align-items: center; /* Centrar los elementos en la columna */
+          }
+      } 
+
+      /*LENTA DISCOS PROCESADOR*/
+
+.lenta {
+    display: flex;
+
+    align-content: space-around;
+    gap: 20px;
+
+}
+
+.video-lenta {
+    margin: 20px;
+    float: left;
+
+}
+
+.texto-lenta {
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.boton1 {
+    margin: 10px;
+    align-self: flex-end;
+}
+
+ /* Estilos responsivos */
+ @media (max-width: 768px) {
+    /* Para pantallas pequeñas, poner los enlaces en columna */
+    .lenta {
+        flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+        align-items: center; /* Centrar los elementos en la columna */
+    }
+} 
+
