@@ -233,9 +233,15 @@
 
 }
 
-.texto-lenta {
+/*.texto-lenta {
     margin: 20px;
     background-color: #f4f4f4;
+}*/
+.texto-lenta {
+    margin: 20px;
+    padding: 20px; /* Esto crea espacio interno */
+    background-color: #f4f4f4;
+    box-sizing: border-box; /* Para que el padding no rompa el layout */
 }
 
 .boton1 {
